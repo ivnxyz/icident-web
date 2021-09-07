@@ -1,7 +1,14 @@
 <template>
-  <Tutorial/>
+  <Home/>
 </template>
 
 <script>
-export default {}
+// Importar componentes
+import Home from './landing/-home.vue'
+
+export default {
+  components: {
+    Home
+  }
+}
 </script>
