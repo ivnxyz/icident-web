@@ -20,7 +20,7 @@
       <!-- Imagen -->
       <img class="mt-4 object-contain object-scale-down max-h-60 w-full" src="https://i.ibb.co/kBgtcT4/pill-smile.png" alt="Mujer sonriendo">
       <!-- CTA -->
-      <MainButton class="-mt-8 md:mt-16 md:w-full shadow-lg">
+      <MainButton class="-mt-8 md:mt-16 md:w-full shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl">
         Agenda tu cita ahora
       </MainButton>
     </div>
