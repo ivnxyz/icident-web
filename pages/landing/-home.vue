@@ -3,22 +3,22 @@
     class="h-screen flex flex-col items-center justify-center bg-no-repeat bg-center bg-cover bg-big-smile md:bg-none"
   >
     <!-- Cita principal -->
-    <div class="m-8 flex flex-col items-center justify-center flex-grow">
+    <div class="m-8 flex flex-col items-center justify-center flex-grow md:items-start">
       <!-- Texto -->
-      <div class="text-white md:text-gray-700">
-        <blockquote class="mb-4 text-right tracking-wide">
+      <div class="text-white md:text-gray-700 text-right">
+        <blockquote class="mb-4 tracking-wide">
           <h1 class="font-serif text-3xl font-semibold">
             "La paz comienza con una sonrisa."
           </h1>
         </blockquote>
-        <figcaption class="text-right tracking-wide">
+        <figcaption class="tracking-wide">
           <p class="font-serif text-lg">
             Madre Teresa de Calcuta
           </p>
         </figcaption>
       </div>
       <!-- CTA -->
-      <MainButton class="mt-8">
+      <MainButton class="mt-8 md:mt-16 md:w-full">
         Agenda tu cita ahora
       </MainButton>
     </div>
