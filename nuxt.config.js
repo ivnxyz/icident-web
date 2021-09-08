@@ -45,13 +45,11 @@ export default {
   tailwindcss: {
     config: {
       /* Extend the Tailwind config here */
-      theme: {
+      variants: {
         extend: {
-          backgroundImage: theme => ({
-           'big-smile': "url('https://i.ibb.co/3RGncqf/big-smile-shadow.jpg')",
-          })
+          backgroundColor: ['active'],
         }
-      }
+      },
     }
   }
 }
