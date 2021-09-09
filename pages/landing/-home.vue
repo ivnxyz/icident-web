@@ -5,7 +5,7 @@
     <!-- Cita principal -->
     <div class="m-8 mb-0 flex flex-col items-center justify-center flex-grow md:items-center md:flex-row md:mt-8">
       <!-- Texto -->
-      <div class="text-gray-700 text-right md:w-1/2 md:text-left">
+      <div class="text-gray-800 text-right md:w-1/2 md:text-left">
         <blockquote class="mb-4 tracking-wide">
           <h1 class="font-serif text-xl  md:text-3xl font-semibold">
             "La paz comienza con una sonrisa."
@@ -29,10 +29,10 @@
       </MainButton>
     </div>
     <!-- Botón para ver más detalles -->
-    <button class="mb-6 flex flex-col items-center text-gray-700">
+    <a class="mb-6 flex flex-col items-center text-gray-700" href="#servicios">
       <p class="text-sm sm:text-md tracking-widest"> Descubre nuestros servicios</p>
       <outline-chevron-down-icon class="w-4 h-4 sm:w-8 sm:h-8" />
-    </button>
+    </a>
   </section>
 </template>
 
