@@ -12,7 +12,7 @@
           </div>
           <!-- Navegación primaria -->
           <div class="hidden lg:flex items-center space-x-8">
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="">
+            <a class="text-gray-500 font-medium hover:text-gray-900" href="#us">
               Nosotros
             </a>
             <a class="text-gray-500 font-medium hover:text-gray-900" href="#servicios">
@@ -49,7 +49,7 @@
         <div class="relative py-2 px-2 bg-white border border-gray-200 rounded-md shadow-xl">
           <div class="absolute top-0 right-8 w-4 h-4 origin-center transform rotate-45 translate-x-5 -translate-y-2 bg-white border-t border-l border-gray-200 rounded-sm pointer-events-none"></div>
           <div class="relative">
-            <a href="#" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
+            <a href="#us" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Nosotros
             </a>
             <a href="#servicios" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
