@@ -82,7 +82,18 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible
+    },
+    closeMenu(e) {
+      if (!this.$el.contains(e.target)) {
+        this.isMenuVisible = false
+      }
     }
+  },
+  mounted() {
+    document.addEventListener('click', this.closeMenu)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.closeMenu)
   }
 }
 </script>
