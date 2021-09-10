@@ -1,7 +1,7 @@
 <template>
-  <section class="py-20 pb-0 px-4 max-w-5xl mx-auto md:flex">
+  <section class="py-20 pb-0 px-8 max-w-5xl mx-auto md:flex">
     <!-- Texto -->
-    <div class="md:w-2/3 text-center md:text-left">
+    <div class="md:w-4/5 text-center md:text-left">
       <!-- Título -->
       <h2 class="text-xl md:text-3xl font-bold text-gray-800">
         Nosotros
@@ -11,8 +11,17 @@
         Somos parte de una red de clínicas dentales en el sur del país con más de 10 años de experiencia, comprometidos con la atención al paciente, la calidad del servicio y con premios que respaldan nuestro compromiso.
       </p>
     </div>
-    <!-- Imágenes -->
-    <div class="md:w-1/3"></div>
+    <!-- Imágenes de premios -->
+    <div class="max-w-md mx-auto md:w-1/5 grid grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-4 items-center">
+      <!-- 1 -->
+      <img class="w-full h-full object-contain rounded-lg" src="@/assets/awards/1.jpeg" alt="Premio Ashoka">
+      <!-- 2 -->
+      <img class="w-full h-full object-contain rounded-lg" src="@/assets/awards/2.jpeg" alt="Premio Expansión">
+      <!-- 3 -->
+      <img class="w-full h-full object-contain rounded-lg" src="@/assets/awards/3.jpeg" alt="Premio Innovator">
+      <!-- 4 -->
+      <img class="w-full h-full object-contain rounded-lg" src="@/assets/awards/4.jpeg" alt="Premio Innovator">
+    </div>
   </section>
 </template>
 
