@@ -5,6 +5,7 @@
     <Us id="us" />
     <Services id="servicios"/>
     <Care id="cuidados"/>
+    <Footer class="mt-16" id="contacto"/>
   </div>
 </template>
 

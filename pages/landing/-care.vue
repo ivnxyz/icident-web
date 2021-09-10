@@ -38,6 +38,12 @@
           <outline-exclamation-circle-icon class="w-6 h-6 inline" /> NO trabajamos con ninguna aseguradora
         </li>
       </ul>
+
+      <h3 class="font-bold mt-8">
+      Alternativas de financiamiento
+      </h3>
+
+      En ICI el paciente es nuestra prioridad, en el caso de un tratamiento largo y con un presupuesto elevado tenemos alternativas de financiamiento ya sea directamente con nosotros o a través de nuestro aliado Alivio Capital financiera especializada en otorgar préstamos para tratamiento de salud.
     </article>
   </section>
 </template>

@@ -24,7 +24,7 @@
             <a class="text-gray-500 font-medium hover:text-gray-900" href="#cuidados">
               Cuidados del paciente
             </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="">
+            <a class="text-gray-500 font-medium hover:text-gray-900" href="#contacto">
               Contacto
             </a>
           </div>
@@ -61,7 +61,7 @@
             <a href="#cuidados" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Cuidados del paciente
             </a>
-            <a href="#" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
+            <a href="#contacto" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Contacto
             </a>
             <a href="#" class="block w-full px-4 py-2 font-medium tracking-widest text-center text-white whitespace-no-wrap bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
