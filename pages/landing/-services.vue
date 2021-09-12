@@ -27,7 +27,7 @@ export default {
       {
         title: 'Limpieza dental',
         imageUrl: 'https://source.unsplash.com/1AhGNGKuhR0/640x426',
-        url: ''
+        url: 'limpieza'
       },
       {
         title: 'Guardas',
@@ -73,7 +73,7 @@ export default {
   }),
   methods: {
     goToServiceDetails(serviceUrl) {
-      console.log(serviceUrl)
+      this.$router.push('/servicios/' + serviceUrl)
     }
   }
 }
