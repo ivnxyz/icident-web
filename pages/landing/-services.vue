@@ -8,7 +8,7 @@
     <div class="grid mt-10 gap-5 grid-cols-2 md:grid-cols-4">
       <article class="bg-white p-4 text-center rounded-lg shadow-lg flex flex-col cursor-pointer transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" v-for="service in services" :key="service.title" @click="goToServiceDetails(service.url)">
         <!-- Imagen -->
-        <img class="w-32 h-32 rounded-lg w-full object-cover" src="https://i.ibb.co/vzYQFM4/jonathan-daniels-Cd-VG9f96kyg-unsplash.jpg" alt="Persona sonriendo">
+        <img class="w-32 h-32 rounded-lg w-full object-cover" :src="service.imageUrl" alt="Persona sonriendo">
         <!-- Título -->
         <div class="flex flex-grow items-center justify-center my-2">
           <h3 class="mt-2 text-gray-80">
@@ -26,47 +26,47 @@ export default {
     services: [
       {
         title: 'Limpieza dental',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/1AhGNGKuhR0/640x426',
         url: ''
       },
       {
         title: 'Guardas',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/Pc0ToyoR5Xo/640x426',
         url: ''
       },
       {
         title: 'Extracción de terceros molares',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/pq918sjh894/640x426',
         url: ''
       },
       {
         title: 'Odontología general',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/wm4DuvIpLj8/640x426',
         url: ''
       },
       {
         title: 'Endodoncia',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/b5zPZ8_7vhw/640x426',
         url: ''
       },
       {
         title: 'Ortodoncia',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/Q_o_ob-3Ny4/640x426',
         url: ''
       },
       {
         title: 'Ortopedia',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/1fy0kwwfBRE/640x426',
         url: ''
       },
       {
         title: 'Odontopediatría',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/-uERpM5kXKI/640x426',
         url: ''
       },
       {
         title: 'Odontología cosmética',
-        imageUrl: '',
+        imageUrl: 'https://source.unsplash.com/3ExPoluud54/640x426',
         url: ''
       }
     ]

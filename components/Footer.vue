@@ -5,9 +5,9 @@
       <!-- Número de teléfono -->
       <div>
         <p class="font-bold mb-1">Número de teléfono</p>
-        <button>
+        <a href="tel:522299273743">
           <outline-phone-icon class="w-6 h-6 inline"/> +52 229 927 3743
-        </button>
+        </a>
       </div>
       <!-- Dirección -->
       <div class="mt-10">

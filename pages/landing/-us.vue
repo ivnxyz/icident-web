@@ -12,7 +12,7 @@
       </p>
     </div>
     <!-- Imágenes de premios -->
-    <div class="max-w-md mx-auto md:w-1/5 grid grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-4 items-center">
+    <div class="max-w-md mx-auto md:w-1/5 grid grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-4 items-center max-h-16 md:max-h-40">
       <!-- 1 -->
       <img class="w-full h-full object-contain rounded-lg" src="@/assets/awards/1.jpeg" alt="Premio Ashoka">
       <!-- 2 -->
