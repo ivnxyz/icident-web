@@ -32,42 +32,42 @@ export default {
       {
         title: 'Guardas',
         imageUrl: 'https://source.unsplash.com/Pc0ToyoR5Xo/640x426',
-        url: ''
+        url: 'guardas'
       },
       {
         title: 'Extracción de terceros molares',
         imageUrl: 'https://source.unsplash.com/pq918sjh894/640x426',
-        url: ''
+        url: 'teceros_molares'
       },
       {
         title: 'Odontología general',
         imageUrl: 'https://source.unsplash.com/wm4DuvIpLj8/640x426',
-        url: ''
+        url: 'odontologia_general'
       },
       {
         title: 'Endodoncia',
         imageUrl: 'https://source.unsplash.com/b5zPZ8_7vhw/640x426',
-        url: ''
+        url: 'endodoncia'
       },
       {
         title: 'Ortodoncia',
         imageUrl: 'https://source.unsplash.com/Q_o_ob-3Ny4/640x426',
-        url: ''
+        url: 'ortodoncia'
       },
       {
         title: 'Ortopedia',
         imageUrl: 'https://source.unsplash.com/1fy0kwwfBRE/640x426',
-        url: ''
+        url: 'ortopedia'
       },
       {
         title: 'Odontopediatría',
         imageUrl: 'https://source.unsplash.com/-uERpM5kXKI/640x426',
-        url: ''
+        url: 'odontopediatria'
       },
       {
         title: 'Odontología cosmética',
         imageUrl: 'https://source.unsplash.com/3ExPoluud54/640x426',
-        url: ''
+        url: 'odontologia_cosmetica'
       }
     ]
   }),
