@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full bg-white fixed top-0 animated z-40">
+  <nav class="w-full bg-white fixed top-0 animated z-40 shadow-sm">
     <!-- Contenido de la barra de navegación -->
     <div class="mx-w-7xl px-3 py-3 mx-auto">
       <div class="flex justify-between">
@@ -17,6 +17,9 @@
             </a>
             <a class="text-gray-500 font-medium hover:text-gray-900" href="#servicios">
               Servicios
+            </a>
+            <a class="text-gray-500 font-medium hover:text-gray-900" href="#implantes">
+              Implantes dentales
             </a>
             <a class="text-gray-500 font-medium hover:text-gray-900" href="#galeria">
               Galería
@@ -54,6 +57,9 @@
             </a>
             <a href="#servicios" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Servicios
+            </a>
+            <a href="#implantes" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
+              Implantes dentales
             </a>
             <a href="#galeria" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Galería
