@@ -6,30 +6,30 @@
         <div class="flex">
           <!-- Logo -->
           <div class="mr-12">
-            <a href="#">
+            <NuxtLink to="/">
               <img class="w-24 h-10" src="@/assets/logo.svg" alt="Logo de ICI">
-            </a>
+            </NuxtLink>
           </div>
           <!-- Navegación primaria -->
           <div class="hidden lg:flex items-center space-x-8">
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#us">
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#us">
               Nosotros
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#servicios">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#servicios">
               Servicios
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#implantes">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#implantes">
               Implantes dentales
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#galeria">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#galeria">
               Galería
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#cuidados">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#cuidados">
               Cuidados del paciente
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#contacto">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#contacto">
               Contacto
-            </a>
+            </NuxtLink>
           </div>
         </div>
         <!-- Navegación secundaria -->

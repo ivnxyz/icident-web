@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar/>
     <Home/>
     <Us id="us" />
     <Services id="servicios"/>

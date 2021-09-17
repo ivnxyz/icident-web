@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar/>
     <section class="min-h-screen flex items-center justify-center max-w-5xl mx-6 lg:mx-auto">
       <article class="border-2 border-gray-200 rounded-lg text-gray-800 mt-24 mb-20 p-10">
         <h1 class="text-3xl font-bold text-center mb-10">Endodoncia</h1>
