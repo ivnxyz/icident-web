@@ -1,7 +1,7 @@
 <template>
   <div class="flex-auto flex flex-col items-center h-64">
-      <div class="flex flex-col items-center relative">
-          <div class="w-full  svelte-1l8159u">
+      <div class="flex flex-col items-center relative w-full">
+          <div class="w-full">
               <div class="my-2 bg-white p-1 flex border border-gray-200 rounded svelte-1l8159u">
                   <div class="flex flex-auto flex-wrap"></div>
                   <input :value="selectedSpeciality.nombre" class="p-1 px-2 appearance-none outline-none w-full text-gray-800  svelte-1l8159u">

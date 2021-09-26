@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-white pt-12">
+  <div class="bg-white pt-12 max-w-5xl mx-auto p-6">
     <!-- Selector de especialidad -->
-    <SpecialitySelect :especialidades="especialidades" class="mt-10"/>
+    <h3 class="text-gray-600 font-semibold mt-10">
+      Seleccione la especialidad
+    </h3>
+    <SpecialitySelect class="mt-2" :especialidades="especialidades"/>
   </div>
 </template>
 
