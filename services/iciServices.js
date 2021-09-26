@@ -7,4 +7,11 @@ export default {
   getEspecialidades() {
     return clientAPI(baseURL).get('/especialidades/veracruz');
   },
+  getSchedule(id_especialidad) {
+    return clientAPI(baseURL).get('/agenda/veracruz/disponible', {
+      params: {
+        id_especialidad
+      }
+    })
+  }
 }

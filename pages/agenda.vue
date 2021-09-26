@@ -4,7 +4,12 @@
     <h3 class="text-gray-600 font-semibold mt-10">
       Seleccione la especialidad
     </h3>
-    <SpecialitySelect class="mt-2" :especialidades="especialidades"/>
+    <SpecialitySelect :especialidades="especialidades" class="mt-2"/>
+    <!-- Horarios disponibles -->
+    <h3 class="text-gray-600 font-semibold mt-4">
+      Seleccione un horario
+    </h3>
+    <Schedule :schedule="agenda" class="mt-2" />
   </div>
 </template>
 
@@ -20,9 +25,13 @@ export default {
     try {
       // Obtener datos de especialidades
       const especialidadesRes = await iciServices.getEspecialidades()
+
+      // Obtener agenda
+      const agenda = await iciServices.getSchedule(1)
       
       return {
-        especialidades: especialidadesRes.data
+        especialidades: especialidadesRes.data,
+        agenda: agenda.data
       }
     } catch (err) {
       console.log(err)
