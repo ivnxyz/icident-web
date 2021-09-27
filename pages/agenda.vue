@@ -9,7 +9,7 @@
     <h3 class="text-gray-600 font-semibold mt-4">
       Seleccione un horario
     </h3>
-    <Schedule :schedule="agenda" class="mt-2" />
+    <ScheduleDates :schedule="agenda" class="mt-2" />
   </div>
 </template>
 

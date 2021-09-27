@@ -12,12 +12,12 @@
       <div class="py-4 border-b-2 border-gray-200" v-for="date in sortedDates" :key="date">
         <!-- Fecha -->
         <p class="text-gray-800 font-bold">
-          {{ date }}
+          {{ getReadableDate(date) }}
         </p>
         <!-- Scroll de horarios disponibles -->
         <div class="flex overflow-x-scroll py-4 hide-scroll-bar">
           <section class="flex flex-nowrap">
-            <DateChip v-for="slot in Object.keys(schedule[date])" :key="slot" :date="slot" />
+            <ScheduleDateChip v-for="slot in Object.keys(schedule[date])" :key="slot" :date="slot" />
           </section>
         </div>
       </div>
@@ -26,6 +26,9 @@
 </template>
 
 <script>
+// Importar dependencias
+import dayjs from '../../utils/day'
+
 export default {
   props: {
     schedule: {
@@ -38,11 +41,20 @@ export default {
   }),
   mounted() {
     this.sortedDates = Object.keys(this.schedule)
+  },
+  methods: {
+    capitalize(str) {
+      const firstLetter = str[0].toUpperCase()
+      return firstLetter + str.slice(1)
+    },
+    getReadableDate(date) {
+      return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
