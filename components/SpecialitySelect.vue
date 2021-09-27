@@ -56,7 +56,13 @@ export default {
       }
 
       this.showList = false
+
+      // Emitir evento
+      this.$emit('onSpecialitySelected', this.selectedSpeciality)
     }
+  },
+  mounted() {
+    this.selectSpeciality(this.selectedSpeciality)
   }
 }
 </script>
