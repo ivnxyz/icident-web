@@ -48,7 +48,7 @@ export default {
   methods: {
     onCTAClicked() {
       console.log('hola')
-      this.$rouer.push('/agenda/formulario')
+      this.$router.push('/agenda/formulario')
     }
   }
 }
