@@ -12,23 +12,30 @@
       <div class="flex flex-col md:flex-row md:space-x-5 mt-8">
         <!-- Nombre -->
         <div class="w-full md:w-1/2">
-          <label for="first_name" class="block text-xs font-semibold text-gray-600 uppercase mb-2">NOMBRE(S)</label>
-          <input type="text" name="first_name" id="first_name" placeholder="Tu nombre" class="border p-2 w-full">
+          <label for="first_name" class="block text-xs font-semibold text-gray-600 uppercase mb-2 required">NOMBRE(S)</label>
+          <input type="text" name="first_name" id="first_name" placeholder="Tu nombre" class="border p-2 w-full" required>
         </div>
         <!-- Apellidos -->
         <div class="w-full md:w-1/2">
-          <label for="last_name" class="block text-xs font-semibold text-gray-600 uppercase mb-2 mt-8 md:mt-0">APELLIDOS</label>
-          <input type="text" name="last_name" id="last_name" placeholder="Tus apellidos" class="border p-2 w-full">
+          <label for="last_name" class="block text-xs font-semibold text-gray-600 uppercase mb-2 mt-8 md:mt-0 required">APELLIDOS</label>
+          <input type="text" name="last_name" id="last_name" placeholder="Tus apellidos" class="border p-2 w-full" required>
         </div>
       </div>
       <!-- Número de teléfono -->
-      <label for="phone_number" class="block text-xs font-semibold text-gray-600 uppercase mb-2 mt-8">Número de teléfono</label>
-      <input type="tel" name="phone_number" id="phone_number" placeholder="Tu número de teléfono" class="border p-2 w-full">
+      <label for="phone_number" class="block text-xs font-semibold text-gray-600 uppercase mb-2 mt-8 required">Número de teléfono</label>
+      <input type="tel" name="phone_number" id="phone_number" placeholder="Tu número de teléfono" class="border p-2 w-full" required>
       <!-- Correo electrónico -->
       <label for="email" class="block text-xs font-semibold text-gray-600 uppercase mb-2 mt-8">Correo electrónico</label>
       <input type="email" name="email" id="email" placeholder="Tu correo electrónico" class="border p-2 w-full mt-3 mb-4">
       <!-- Botón para enviar el cuestionario -->
-      <input type="submit" value="Continuar" class="w-full mt-6 bg-pink-500 active:bg-pink-600 text-white font-semibold p-3 rounded-lg">
+      <input type="submit" value="Continuar" class="w-full mt-6 bg-pink-500 active:bg-pink-600 text-white font-semibold p-3 rounded-lg cursor-pointer">
   </form>
   </div>
 </template>
+
+<style scoped>
+.required:after {
+  content:" *";
+  color: red;
+}
+</style>
