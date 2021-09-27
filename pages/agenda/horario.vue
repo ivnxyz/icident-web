@@ -15,7 +15,7 @@
 
 <script>
 // Importar dependencias
-import iciServices from '../services/iciServices'
+import iciServices from '../../services/iciServices'
 
 export default {
   data: () => ({
