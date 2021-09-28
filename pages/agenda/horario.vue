@@ -18,6 +18,14 @@
 import iciServices from '../../services/iciServices'
 
 export default {
+  validate({ store, redirect }) {
+    // Verificar que el usuario haya ingresado su información
+    if (store.state.form.userData === null) {
+      return redirect('/agenda/formulario')
+    }
+
+    return true
+  },
   data: () => ({
     especialidades: [],
     agenda: null

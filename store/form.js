@@ -1,9 +1,9 @@
 export const state = () => ({
-  formData: null
+  userData: null
 })
 
 export const mutations = {
-  setFormData(state, formData) {
-    state.formData = formData
+  setFormData(state, userData) {
+    state.userData = userData
   }
 }

@@ -66,12 +66,16 @@ export default {
         return
       }
 
+      // Guardar información en el estado
       this.$store.commit('form/setFormData', {
         firstName: this.cleanFirstName,
         lastName: this.cleanLastName,
         phoneNumber: this.cleanPhoneNumber,
         email: this.cleanEmail
       })
+
+      // Redirigir al usuario
+      this.$router.push('/agenda/horario')
     },
   },
   computed: {
