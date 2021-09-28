@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white pt-12">
     <!-- Formulario -->
-    <form @submit="submitForm" class="form max-w-5xl mx-auto p-6 my-10 relative">
+    <form @submit.prevent="submitForm" class="form max-w-5xl mx-auto p-6 my-10 relative">
       <h3 class="text-2xl text-gray-900 font-semibold">
         Ya casi tienes tu cita
       </h3>
@@ -34,9 +34,6 @@
 </template>
 
 <script>
-// Importar dependencias
-import { mapMutations } from 'vuex'
-
 export default {
   data: () => ({
     patient: {
@@ -48,7 +45,62 @@ export default {
   }),
   methods: {
     submitForm() {
-      this.$store.commit('form/setFormData', this.patient)
+      // Validar formulario
+      if (!this.isFirstNameValid) {
+        alert('Por favor ingresa un nombre válido')
+        return
+      }
+
+      if (!this.isLastNameValid) {
+        alert('Por favor ingresa un apellido válido')
+        return
+      }
+
+      if (!this.isPhoneNumberValid) {
+        alert('Por favor ingresa un número de teléfono válido')
+        return
+      }
+
+      if (!this.isEmailValid) {
+        alert('Por favor ingresa un email válido')
+        return
+      }
+
+      this.$store.commit('form/setFormData', {
+        firstName: this.cleanFirstName,
+        lastName: this.cleanLastName,
+        phoneNumber: this.cleanPhoneNumber,
+        email: this.cleanEmail
+      })
+    },
+  },
+  computed: {
+    cleanFirstName() {
+      return this.patient.firstName.trim()
+    },
+    cleanLastName() {
+      return this.patient.lastName.trim()
+    },
+    cleanPhoneNumber() {
+      return this.patient.phoneNumber.trim()
+    },
+    cleanEmail() {
+      return this.patient.email.trim()
+    },
+    isFirstNameValid() {
+      return this.cleanFirstName.replace(/\s+/g, '').length > 0
+    },
+    isLastNameValid() {
+      return this.cleanLastName.replace(/\s+/g, '').length > 0
+    },
+    isPhoneNumberValid() {
+      const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+      const digits = this.cleanPhoneNumber.replace(/\D/g, "")
+      return phoneRegex.test(digits)
+    },
+    isEmailValid() {
+      const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      return emailRegex.test(this.cleanEmail)
     }
   }
 }

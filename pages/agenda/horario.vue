@@ -9,7 +9,7 @@
     <h3 class="text-gray-600 font-semibold mt-4">
       Seleccione un horario
     </h3>
-    <ScheduleDates :schedule="agenda" class="mt-2" />
+    <ScheduleDates v-if="agenda" :schedule="agenda" class="mt-2" />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ import iciServices from '../../services/iciServices'
 export default {
   data: () => ({
     especialidades: [],
-    agenda: {}
+    agenda: null
   }),
   async asyncData() {
     try {
