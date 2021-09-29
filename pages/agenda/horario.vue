@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white pt-12 max-w-5xl mx-auto p-6">
+  <div class="bg-white pt-12 max-w-5xl mx-auto p-6 relative">
     <!-- Selector de especialidad -->
     <h3 class="text-gray-600 font-semibold mt-10">
       Seleccione la especialidad
@@ -10,6 +10,10 @@
       Seleccione un horario
     </h3>
     <ScheduleDates v-if="agenda" :schedule="agenda" class="mt-2" />
+    <!-- Botón para confirmar cita -->
+    <MainButton class="w-full mt-10">
+      Agendar cita
+    </MainButton>
   </div>
 </template>
 
