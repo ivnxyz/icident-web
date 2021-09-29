@@ -17,7 +17,12 @@
         <!-- Scroll de horarios disponibles -->
         <div class="flex overflow-x-scroll py-4 hide-scroll-bar">
           <section class="flex flex-nowrap">
-            <ScheduleDateChip v-for="slot in Object.keys(schedule[date])" :key="slot" :date="slot" />
+            <ScheduleDateChip
+              v-for="slot in Object.keys(schedule[date])"
+              :key="slot" :date="slot"
+              :isSelected="isSelectedAppointment(date, slot)"
+              @click="selectedSlot => toggleSlot(date, selectedSlot)"
+            />
           </section>
         </div>
       </div>
@@ -28,6 +33,7 @@
 <script>
 // Importar dependencias
 import dayjs from '../../utils/day'
+import { mapGetters } from "vuex";
 
 export default {
   props: {
@@ -49,7 +55,32 @@ export default {
     },
     getReadableDate(date) {
       return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
+    },
+    toggleSlot(date, slot) {
+      // Decidir qué información guardar
+      const appointmentData = !this.isSelectedAppointment(date, slot) ? {
+        date,
+        time: slot,
+        slotData: this.schedule[date][slot]
+      } : null
+      
+      // Guardar información en el estado
+      this.$store.commit('schedule/setAppointmentData', appointmentData)
+    },
+    isSelectedAppointment(date, slot) {
+      if (this.getSelectedAppointment === null) {
+        return false
+      }
+
+      // Obtener datos de la cita
+      const selectedDate = this.getSelectedAppointment.date
+      const selectedTime = this.getSelectedAppointment.time
+
+      return date === selectedDate && slot === selectedTime
     }
+  },
+  computed: {
+    ...mapGetters("schedule", ["getSelectedAppointment"])
   }
 }
 </script>
