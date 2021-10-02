@@ -9,11 +9,19 @@ export default {
       type: String,
       required: false,
       default: 'blue-300'
+    },
+    size: {
+      type: String,
+      rquired: false,
+      default: "12"
     }
   },
   computed: {
     spinnerClass() {
-      return 'w-12 h-12 border-4 rounded-full loader border-' + this.color
+      return `border-4 rounded-full loader border-${this.color} ${this.spinnerSizeClass}`
+    },
+    spinnerSizeClass() {
+      return `w-${this.size} h-${this.size}`
     }
   }
 }
