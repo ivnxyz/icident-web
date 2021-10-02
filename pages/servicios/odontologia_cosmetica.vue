@@ -44,7 +44,7 @@
         </p>
 
         <!-- Botón para agendar cita -->
-        <MainButton class="block mt-8 mx-auto shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl">
+        <MainButton class="block mt-8 mx-auto shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" :isCTA="true">
           Agenda tu cita ahora
         </MainButton>
       </article>

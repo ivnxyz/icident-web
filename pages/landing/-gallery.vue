@@ -12,7 +12,7 @@
       <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
         <div class="p-12 md:pr-24 md:pl-16 md:py-12">
           <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta earum, ab doloremque ipsum deserunt in ut veritatis odio nobis ipsam modi iusto dolorum laudantium. Unde cum porro quis maxime.</p>
-          <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
+          <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" @click="onCTAClicked">
             <span>Agenda tu cita</span>
             <span class="text-xs ml-1">&#x279c;</span>
           </a>
@@ -39,3 +39,13 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    onCTAClicked() {
+      this.$router.push('/agenda/formulario')
+    }
+  }
+}
+</script>

@@ -17,14 +17,14 @@
           </p>
         </figcaption>
         <!-- CTA -->
-        <MainButton class="hidden md:block mt-8 w-full shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" @click="onCTAClicked">
+        <MainButton class="hidden md:block mt-8 w-full shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" :isCTA="true">
           Agenda tu cita ahora
         </MainButton>
       </div>
       <!-- Imagen -->
       <img class="mt-4 object-contain object-scale-down max-h-60 md:max-h-80 w-full md:w-1/2" src="https://i.ibb.co/kBgtcT4/pill-smile.png" alt="Mujer sonriendo">
       <!-- CTA -->
-      <MainButton class="md:hidden -mt-8 md:mt-16 shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl">
+      <MainButton class="md:hidden -mt-8 md:mt-16 shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" :isCTA="true">
         Agenda tu cita ahora
       </MainButton>
     </div>
@@ -45,11 +45,5 @@ export default {
       return "background: url(''); background-repeat: no-repeat; background-position: center; background-size: cover;"
     }
   },
-  methods: {
-    onCTAClicked() {
-      console.log('hola')
-      this.$router.push('/agenda/formulario')
-    }
-  }
 }
 </script>

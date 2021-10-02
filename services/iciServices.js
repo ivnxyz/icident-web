@@ -1,7 +1,7 @@
 // Importar cliente de la API
 import clientAPI from './axiosConfig';
 
-const baseURL = 'http://localhost:3001/api';
+const baseURL = process.env.baseApiUrl;
 
 export default {
   getEspecialidades() {
