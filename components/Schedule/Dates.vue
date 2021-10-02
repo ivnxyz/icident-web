@@ -30,7 +30,7 @@
     </div>
     <!-- Mensaje si no hay fechas -->
     <div v-else class="mt-10 text-opacity-50">
-      <p class="text-center text-gray-600">No hay fechas disponibles</p>
+      <p class="text-center text-gray-600">No hay horarios disponibles</p>
     </div>
   </section>
 </template>

@@ -9,7 +9,12 @@
     <h3 class="text-gray-600 font-semibold mt-4">
       Seleccione un horario
     </h3>
-    <ScheduleDates v-if="agenda && !loadingSchedule" :schedule="agenda" class="mt-2" />
+    <!-- Spinner -->
+    <div v-if="loadingSchedule" class="flex justify-center items-center h-60">
+      <Spinner />
+    </div>
+    <!-- Componente de horarios -->
+    <ScheduleDates v-else-if="agenda" :schedule="agenda" class="mt-2" />
     <!-- Botón para confirmar cita -->
     <MainButton class="w-full mt-10">
       Agendar cita
