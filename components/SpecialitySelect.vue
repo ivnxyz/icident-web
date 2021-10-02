@@ -4,7 +4,7 @@
       <div class="w-full">
           <div class="my-2 bg-white p-1 flex border border-gray-200 rounded svelte-1l8159u">
               <div class="flex flex-auto flex-wrap"></div>
-              <input :value="selectedSpeciality.nombre" class="p-1 px-2 appearance-none outline-none w-full text-gray-800  svelte-1l8159u">
+              <input :value="selectedSpeciality.nombre" class="p-1 px-2 appearance-none outline-none w-full text-gray-800 cursor-pointer svelte-1l8159u" readonly @click="showList = !showList">
               <div class="text-gray-300 w-8 py-1 pl-2 pr-1 border-l flex items-center border-gray-200 svelte-1l8159u">
                   <button class="cursor-pointer w-6 h-6 text-gray-600 outline-none focus:outline-none" @click="showList = !showList">
                       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up w-4 h-4">
