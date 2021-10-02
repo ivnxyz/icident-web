@@ -111,6 +111,9 @@ export default {
           fecha,
           hora
         )
+
+        // Redirigir al usuario
+        this.$router.push('/agenda/exito')
       } catch (err) {
         // Mostrar error
         alert(err.message)
