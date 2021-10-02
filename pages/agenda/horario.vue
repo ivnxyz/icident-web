@@ -9,7 +9,7 @@
     <h3 class="text-gray-600 font-semibold mt-4">
       Seleccione un horario
     </h3>
-    <ScheduleDates v-if="agenda" :schedule="agenda" class="mt-2" />
+    <ScheduleDates v-if="agenda && !loadingSchedule" :schedule="agenda" class="mt-2" />
     <!-- Botón para confirmar cita -->
     <MainButton class="w-full mt-10">
       Agendar cita
@@ -32,6 +32,7 @@ export default {
   },
   data: () => ({
     especialidades: [],
+    loadingSchedule: false,
     agenda: null
   }),
   async asyncData() {
@@ -48,6 +49,9 @@ export default {
   },
   methods: {
     async onSpecialitySelected(speciality) {
+      // Mostrar spinner
+      this.loadingSchedule = true
+
       try {
         // Obtener agenda
         const agenda = await iciServices.getSchedule(speciality.id)
@@ -55,6 +59,9 @@ export default {
       } catch (err) {
         alert(err.message)
       }
+
+      // Ocultar spinner
+      this.loadingSchedule = false
     }
   }
 }

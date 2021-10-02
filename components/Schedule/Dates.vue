@@ -1,4 +1,5 @@
 <template>
+  <!-- Componente si hay fechas disponibles -->
   <section>
     <!-- Header -->
     <div class="border-b-4 border-gray-300 py-6">
@@ -8,7 +9,7 @@
       </h4>
     </div>
     <!-- Días -->
-    <div>
+    <div v-if="sortedDates.length > 0">
       <div class="py-4 border-b-2 border-gray-200" v-for="date in sortedDates" :key="date">
         <!-- Fecha -->
         <p class="text-gray-800 font-bold">
@@ -26,6 +27,10 @@
           </section>
         </div>
       </div>
+    </div>
+    <!-- Mensaje si no hay fechas -->
+    <div v-else class="mt-10 text-opacity-50">
+      <p class="text-center text-gray-600">No hay fechas disponibles</p>
     </div>
   </section>
 </template>
