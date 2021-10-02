@@ -13,5 +13,23 @@ export default {
         id_especialidad
       }
     })
+  },
+  savePatient(email, firstName, lastName, phoneNumber) {
+    return clientAPI(baseURL).post('/pacientes/veracruz', {
+      firstName,
+      lastName,
+      phoneNumber,
+      email
+    })
+  },
+  saveAppointment(idDentista, idEspecialidad, idPaciente, idSillon, fecha, hora) {
+    return clientAPI(baseURL).post('/agenda/cita/veracruz', {
+      idDentista,
+      idEspecialidad,
+      idPaciente,
+      idSillon,
+      fecha,
+      hora
+    })
   }
 }
