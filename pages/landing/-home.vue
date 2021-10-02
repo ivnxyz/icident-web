@@ -17,7 +17,7 @@
           </p>
         </figcaption>
         <!-- CTA -->
-        <MainButton class="hidden md:block mt-8 w-full shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl">
+        <MainButton class="hidden md:block mt-8 w-full shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" @click="onCTAClicked">
           Agenda tu cita ahora
         </MainButton>
       </div>
@@ -43,6 +43,12 @@ export default {
   computed: {
     sectionStyle() {
       return "background: url(''); background-repeat: no-repeat; background-position: center; background-size: cover;"
+    }
+  },
+  methods: {
+    onCTAClicked() {
+      console.log('hola')
+      this.$router.push('/agenda/formulario')
     }
   }
 }

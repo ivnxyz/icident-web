@@ -6,35 +6,35 @@
         <div class="flex">
           <!-- Logo -->
           <div class="mr-12">
-            <a href="#">
+            <NuxtLink to="/">
               <img class="w-24 h-10" src="@/assets/logo.svg" alt="Logo de ICI">
-            </a>
+            </NuxtLink>
           </div>
           <!-- Navegación primaria -->
           <div class="hidden lg:flex items-center space-x-8">
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#us">
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#us">
               Nosotros
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#servicios">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#servicios">
               Servicios
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#implantes">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#implantes">
               Implantes dentales
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#galeria">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#galeria">
               Galería
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#cuidados">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#cuidados">
               Cuidados del paciente
-            </a>
-            <a class="text-gray-500 font-medium hover:text-gray-900" href="#contacto">
+            </NuxtLink>
+            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#contacto">
               Contacto
-            </a>
+            </NuxtLink>
           </div>
         </div>
         <!-- Navegación secundaria -->
         <div class="hidden lg:block">
-          <button class="bg-indigo-500 active:bg-indigo-600 text-white px-5 py-2 rounded-lg font-medium tracking-widest">
+          <button class="bg-indigo-500 active:bg-indigo-600 text-white px-5 py-2 rounded-lg font-medium tracking-widest" @click="onCTAClicked">
             Agenda tu cita
           </button>
         </div>
@@ -70,7 +70,7 @@
             <a href="#contacto" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Contacto
             </a>
-            <a href="#" class="block w-full px-4 py-2 font-medium tracking-widest text-center text-white whitespace-no-wrap bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+            <a @click="onCTAClicked" class="block w-full px-4 py-2 font-medium tracking-widest text-center text-white whitespace-no-wrap bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:shadow-outline transition duration-300 ease-in-out cursor-pointer">
               Agenda tu cita
             </a>
           </div>
@@ -93,6 +93,9 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.isMenuVisible = false
       }
+    },
+    onCTAClicked() {
+      this.$router.push('/agenda/formulario')
     }
   },
   mounted() {
