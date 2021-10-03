@@ -36,7 +36,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@netsells/nuxt-hotjar', { id: '2632405', sv: '6' }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
