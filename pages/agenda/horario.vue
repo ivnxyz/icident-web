@@ -103,7 +103,7 @@ export default {
         const hora = this.appointmentData.time
 
         // Guardar datos de la cita
-        await iciServices.saveAppointment(
+        const appointmentRes = await iciServices.saveAppointment(
           idDentista,
           idEspecialidad,
           patientId,
@@ -112,8 +112,14 @@ export default {
           hora
         )
 
+        const appointmentId = appointmentRes.data.id
+
+        // Eliminar información del estado
+        this.$store.commit('form/setFormData', null)
+        this.$store.commit('schedule/setAppointmentData', null)
+
         // Redirigir al usuario
-        this.$router.push('/agenda/exito')
+        this.$router.push(`/agenda/exito/${appointmentId}`)
       } catch (err) {
         // Mostrar error
         alert(err.message)

@@ -31,5 +31,8 @@ export default {
       fecha,
       hora
     })
+  },
+  getAppointment(appointmentId) {
+    return clientAPI(baseURL).get(`/citas/${appointmentId}`)
   }
 }
