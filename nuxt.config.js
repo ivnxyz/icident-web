@@ -8,11 +8,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'description', name: 'description', content: 'La paz comienza con una sonrisa' },
+      { property: 'og:image', content: 'https://i.ibb.co/pywL84s/logo.png' },
+      { property: 'og:title', content: 'ici | Clínica dental' },
+      { property: 'og:description', content: 'La paz comienza con una sonrisa' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#FF76B5' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
     ]
   },
 
