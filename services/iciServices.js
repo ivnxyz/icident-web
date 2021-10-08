@@ -1,16 +1,17 @@
 // Importar cliente de la API
 import clientAPI from './axiosConfig';
 
+const branchId = process.env.veracruzBranchId
 const baseURL = process.env.baseApiUrl;
 
 export default {
   getEspecialidades() {
-    return clientAPI(baseURL).get('/especialidades/veracruz');
+    return clientAPI(baseURL).get('/especialidades/');
   },
-  getSchedule(id_especialidad) {
-    return clientAPI(baseURL).get('/agenda/veracruz/disponible', {
+  getSchedule(specialityId) {
+    return clientAPI(baseURL).get(`/agenda/${branchId}/disponible`, {
       params: {
-        id_especialidad
+        id_especialidad: specialityId
       }
     })
   },
@@ -23,7 +24,7 @@ export default {
     })
   },
   saveAppointment(idDentista, idEspecialidad, idPaciente, idSillon, fecha, hora) {
-    return clientAPI(baseURL).post('/agenda/cita/veracruz', {
+    return clientAPI(baseURL).post(`/agenda/cita/${branchId}`, {
       idDentista,
       idEspecialidad,
       idPaciente,
