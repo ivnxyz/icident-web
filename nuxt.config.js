@@ -38,6 +38,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt-hero-icons/outline/nuxt',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -64,5 +65,9 @@ export default {
   env: {
     baseApiUrl: process.env.BASE_API_URL || 'http://localhost:3001/api',
     veracruzBranchId: process.env.ID_BOCA_DEL_RIO
+  },
+
+  googleAnalytics: {
+    id: 'G-JJM2LTNQF2'
   }
 }
