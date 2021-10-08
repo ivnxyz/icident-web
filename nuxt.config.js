@@ -62,6 +62,7 @@ export default {
   },
 
   env: {
-    baseApiUrl: process.env.BASE_API_URL || 'http://localhost:3001/api'
+    baseApiUrl: process.env.BASE_API_URL || 'http://localhost:3001/api',
+    veracruzBranchId: process.env.ID_BOCA_DEL_RIO
   }
 }
