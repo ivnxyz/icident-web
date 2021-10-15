@@ -61,7 +61,7 @@ export default {
         return
       }
 
-      if (!this.isEmailValid) {
+      if (this.cleanEmail !== '' && !this.isEmailValid) {
         alert('Por favor ingresa un email válido')
         return
       }
