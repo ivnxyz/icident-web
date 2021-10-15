@@ -6,12 +6,16 @@
     </h2>
     <!-- Carousel Body -->
     <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="min-height: 19rem;">
-      <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-        <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://source.unsplash.com/FugXIjIqSy0/640x426" alt="">
+      <!-- Imagen -->
+      <div class="relative w-full md:w-3/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
+        <img class="absolute inset-0 w-full h-full object-contain object-center" :src="require(`~/assets/gallery/${stories[selectedStory].image}`)" alt="">
       </div>
-      <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+      <!-- Descripción -->
+      <div class="w-full md:w-2/5 h-full flex items-center bg-gray-100 rounded-lg">
         <div class="p-12 md:pr-24 md:pl-16 md:py-12">
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta earum, ab doloremque ipsum deserunt in ut veritatis odio nobis ipsam modi iusto dolorum laudantium. Unde cum porro quis maxime.</p>
+          <p class="text-gray-600">
+            {{ stories[selectedStory].description }}
+          </p>
           <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" @click="onCTAClicked">
             <span>Agenda tu cita</span>
             <span class="text-xs ml-1">&#x279c;</span>
@@ -21,10 +25,10 @@
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
       </div>
-      <button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+      <button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline" @click="onLeftArrowClicked">
         <span class="block" style="transform: scale(-1);">&#x279c;</span>
       </button>
-      <button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+      <button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline" @click="onRightArrowClicked">
         <span class="block" style="transform: scale(1);">&#x279c;</span>
       </button>
     </div>
@@ -42,9 +46,36 @@
 
 <script>
 export default {
+  data: () => ({
+    stories: [
+      {
+        image: 'carillas.JPG',
+        description: 'Caso de éxito con carillas'
+      },
+      {
+        image: 'brackets.JPG',
+        description: 'Caso de éxito con brackets'
+      }
+    ],
+    selectedStory: 0
+  }),
   methods: {
     onCTAClicked() {
       this.$router.push('/agenda/formulario')
+    },
+    onRightArrowClicked() {
+      if (this.selectedStory + 1 > this.stories.length - 1) {
+        this.selectedStory = 0
+      } else {
+        this.selectedStory += 1
+      }
+    },
+    onLeftArrowClicked() {
+      if (this.selectedStory - 1 < 0) {
+        this.selectedStory = this.stories.length - 1
+      } else {
+        this.selectedStory -= 1
+      }
     }
   }
 }
