@@ -68,6 +68,11 @@ export default {
         title: 'Odontología cosmética',
         imageUrl: 'https://source.unsplash.com/3ExPoluud54/640x426',
         url: 'odontologia_cosmetica'
+      },
+      {
+        title: 'Implantes dentales',
+        imageUrl: 'https://i.ibb.co/MCk3S0y/implante.jpg',
+        url: 'implantes'
       }
     ]
   }),

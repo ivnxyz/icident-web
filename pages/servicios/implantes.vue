@@ -1,14 +1,10 @@
 <template>
-  <section class="pt-20 my-8 w-full md:px-6 py-6 flex items-center justify-center bg-purple-600">
-    <div class="max-w-5xl">
-      <article class="text-white p-8 md:px-0 flex flex-col md:flex-row">
-        <!-- Contenido -->
-        <div class="w-full md:w-2/3 md:px-12">
-          <!-- Título -->
-          <h2 class="font-bold text-xl md:text-3xl text-center mb-8">
-            Implantes dentales
-          </h2>
-          <p>
+  <div>
+    <section class="min-h-screen flex items-center justify-center max-w-5xl mx-6 lg:mx-auto">
+      <article class="border-2 border-gray-200 rounded-lg text-gray-800 mt-24 mb-20 p-10">
+        <h1 class="text-3xl font-bold text-center mb-10">Implantes dentales</h1>
+
+        <p>
             ¿Has perdido algún diente por desgaste, accidente o enfermedad de encias? Los implantes dentales son una excelente solución para reponer dientes faltantes. Los implantes se ven y se sientes como un diente natural y es un solución más permanente.
           </p>
 
@@ -60,12 +56,12 @@
             <li>Un puente fijo puede reponer 2 o más dientes utilizando sólo 2 impalantes</li>
             <li>Una prótesis dental complete que reemplace todos tus dientes superiores o inferiores, en este cado el número de implante puede variar dependiendo del tipo de prótesis que se elija ya sea fija o removible, usualmente se requieren 4 implantes</li>
           </ul>
-        </div>
-        <!-- Imagen -->
-        <div class="w-full md:w-1/3">
-          <img class="mx-auto h-80 md:h-1/2 object-contain" src="@/assets/implante.png" alt="Imagen de un implante dental">
-        </div>
+
+        <!-- Botón para agendar cita -->
+        <MainButton class="block mt-8 mx-auto shadow-lg transition-all duration-400 transform hover:scale-105 cursor-pointer hover:shadow-xl" :isCTA="true">
+          Agenda tu cita ahora
+        </MainButton>
       </article>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
