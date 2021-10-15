@@ -18,9 +18,6 @@
             <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#servicios">
               Servicios
             </NuxtLink>
-            <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#implantes">
-              Implantes dentales
-            </NuxtLink>
             <NuxtLink class="text-gray-500 font-medium hover:text-gray-900" to="/#galeria">
               Galería
             </NuxtLink>
@@ -57,9 +54,6 @@
             </a>
             <a href="#servicios" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Servicios
-            </a>
-            <a href="#implantes" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
-              Implantes dentales
             </a>
             <a href="#galeria" class="block w-full px-4 py-2 font-medium text-gray-700 whitespace-no-wrap hover:bg-gray-100 focus:outline-none hover:text-gray-900 focus:text-gray-900 focus:shadow-outline transition duration-300 ease-in-out">
               Galería
