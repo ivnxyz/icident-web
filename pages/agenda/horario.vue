@@ -48,7 +48,7 @@ export default {
       const especialidadesRes = await iciServices.getEspecialidades()
 
       return {
-        especialidades: especialidadesRes.data
+        especialidades: especialidadesRes.data.filter(es => es.id === 1)
       }
     } catch (err) {
       console.log(err)
