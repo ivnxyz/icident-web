@@ -45,7 +45,7 @@
 
 <script>
 // Importar dependencias
-import dayjs from '../../utils/day'
+import readableDate from '~/mixins/readableDate'
 import { mapGetters } from "vuex";
 
 export default {
@@ -74,17 +74,11 @@ export default {
   data: () => ({
     sortedDates: [],
   }),
+  mixins: [readableDate],
   mounted() {
     this.sortedDates = Object.keys(this.schedule)
   },
   methods: {
-    capitalize(str) {
-      const firstLetter = str[0].toUpperCase()
-      return firstLetter + str.slice(1)
-    },
-    getReadableDate(date) {
-      return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
-    },
     toggleSlot(date, slot) {
       // Decidir qué información guardar
       const appointmentData = !this.isSelectedAppointment(date, slot) ? {

@@ -34,6 +34,7 @@
 <script>
 // Importar dependencias
 import iciServices from '../../services/iciServices'
+import readableDate from '~/mixins/readableDate'
 import dayjs from '~/utils/day.js'
 
 export default {
@@ -56,6 +57,7 @@ export default {
     currentWeek: 0,
     maximumWeeks: 2,
   }),
+  mixins: [readableDate],
   async asyncData() {
     try {
       // Obtener datos de especialidades
@@ -162,13 +164,6 @@ export default {
 
       // Ocultar spinner
       this.loadingSchedule = false
-    },
-    capitalize(str) {
-      const firstLetter = str[0].toUpperCase()
-      return firstLetter + str.slice(1)
-    },
-    getReadableDate(date) {
-      return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
     },
   },
   computed: {
