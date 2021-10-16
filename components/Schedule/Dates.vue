@@ -2,11 +2,19 @@
   <!-- Componente si hay fechas disponibles -->
   <section>
     <!-- Header -->
-    <div class="border-b-4 border-gray-300 py-6">
+    <div class="flex flex-row justify-between border-b-4 border-gray-300 py-6">
+      <!-- Botón para la semana pasada -->
+      <button :class="currentWeek === 0 ? 'invisible' : ''" @click="onShowPreviousWeek">
+        <outline-chevron-left-icon class="w-8 h-8" />
+      </button>
       <!-- Fechas de la semana -->
       <h4 class="text-center tracking-widest font-bold text-gray-800">
-        ESTA SEMANA
+        {{ currentWeek === 0 ? 'ESTA SEMANA' : `${startingDate} - ${endingDate}`}}
       </h4>
+      <!-- Botón para la siguiente semana -->
+      <button :class="currentWeek === maximumWeeks ? 'invisible' : ''" @click="onShowNextWeek">
+        <outline-chevron-right-icon class="w-8 h-8" />
+      </button>
     </div>
     <!-- Días -->
     <div v-if="sortedDates.length > 0">
@@ -45,6 +53,22 @@ export default {
     schedule: {
       type: Object,
       required: false
+    },
+    startingDate: {
+      type: String,
+      required: false
+    },
+    endingDate: {
+      type: String,
+      required: false
+    },
+    currentWeek: {
+      type: Number,
+      required: true
+    },
+    maximumWeeks: {
+      type: Number,
+      required: true
     }
   },
   data: () => ({
@@ -82,6 +106,12 @@ export default {
       const selectedTime = this.getSelectedAppointment.time
 
       return date === selectedDate && slot === selectedTime
+    },
+    onShowPreviousWeek() {
+      this.$emit('loadSchedule', this.currentWeek - 1)
+    },
+    onShowNextWeek() {
+      this.$emit('loadSchedule', this.currentWeek + 1)
     }
   },
   computed: {

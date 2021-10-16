@@ -68,6 +68,6 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'G-JJM2LTNQF2'
+    id: 'UA-210368582-1'
   }
 }

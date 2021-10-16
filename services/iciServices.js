@@ -8,10 +8,11 @@ export default {
   getEspecialidades() {
     return clientAPI(baseURL).get('/especialidades/');
   },
-  getSchedule(specialityId) {
+  getSchedule(specialityId, startingDate) {
     return clientAPI(baseURL).get(`/agenda/${branchId}/disponible`, {
       params: {
-        id_especialidad: specialityId
+        id_especialidad: specialityId,
+        fecha_inicio: startingDate || undefined
       }
     })
   },

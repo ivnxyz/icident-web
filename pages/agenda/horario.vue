@@ -14,7 +14,16 @@
       <Spinner />
     </div>
     <!-- Componente de horarios -->
-    <ScheduleDates v-else-if="agenda" :schedule="agenda" class="mt-2" />
+    <ScheduleDates
+      v-else-if="agenda"
+      :schedule="agenda"
+      :startingDate="scheduleStartingDate"
+      :endingDate="scheduleEndingDate"
+      :currentWeek="currentWeek"
+      :maximumWeeks="maximumWeeks"
+      class="mt-2"
+      @loadSchedule="loadSchedule"
+    />
     <!-- Botón para confirmar cita -->
     <MainButton :loading="generatingAppointment" class="w-full mt-10" @click="saveAppointment">
       Agendar cita
@@ -25,6 +34,7 @@
 <script>
 // Importar dependencias
 import iciServices from '../../services/iciServices'
+import dayjs from '~/utils/day.js'
 
 export default {
   validate({ store, redirect }) {
@@ -40,7 +50,11 @@ export default {
     especialidades: [],
     loadingSchedule: false,
     generatingAppointment: false,
-    agenda: null
+    agenda: null,
+    scheduleStartingDate: null,
+    scheduleEndingDate: null,
+    currentWeek: 0,
+    maximumWeeks: 2,
   }),
   async asyncData() {
     try {
@@ -124,7 +138,38 @@ export default {
         // Mostrar error
         alert(err.message)
       }
-    }
+    },
+    async loadSchedule(week) {
+      // Mostrar spinner
+      this.currentWeek = week
+      this.loadingSchedule = true
+
+      try {
+        // Obtener el siguiente lunes
+        const nextMonday = dayjs().weekday(week * 7)
+        const nextWeekEnd = nextMonday.endOf('week').subtract(1, 'day')
+
+        // Asignar las fechas de la agenda
+        this.scheduleStartingDate = this.getReadableDate(nextMonday)
+        this.scheduleEndingDate = this.getReadableDate(nextWeekEnd)
+
+        // Obtener agenda
+        const agenda = await iciServices.getSchedule(this.specialityId, nextMonday.format('YYYY-MM-DD'))
+        this.agenda = agenda.data
+      } catch (err) {
+        alert(err)
+      }
+
+      // Ocultar spinner
+      this.loadingSchedule = false
+    },
+    capitalize(str) {
+      const firstLetter = str[0].toUpperCase()
+      return firstLetter + str.slice(1)
+    },
+    getReadableDate(date) {
+      return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
+    },
   },
   computed: {
     userData() {
