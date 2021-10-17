@@ -24,14 +24,15 @@ export default {
       email
     })
   },
-  saveAppointment(idDentista, idEspecialidad, idPaciente, idSillon, fecha, hora) {
+  saveAppointment(idDentista, idEspecialidad, idPaciente, idSillon, fecha, hora, comentario) {
     return clientAPI(baseURL).post(`/agenda/cita/${branchId}`, {
       idDentista,
       idEspecialidad,
       idPaciente,
       idSillon,
       fecha,
-      hora
+      hora,
+      comentario
     })
   },
   getAppointment(appointmentId) {
