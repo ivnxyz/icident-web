@@ -126,6 +126,7 @@ export default {
         const idSillon = parseInt(this.appointmentData.slotData.id_sillon, 10)
         const fecha = this.appointmentData.date
         const hora = this.appointmentData.time
+        const comment = this.comment
 
         // Guardar datos de la cita
         const appointmentRes = await iciServices.saveAppointment(
