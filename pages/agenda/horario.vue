@@ -146,7 +146,7 @@ export default {
         this.$store.commit('schedule/setAppointmentData', null)
 
         // Redirigir al usuario
-        this.$router.push(`/agenda/exito/${appointmentId}`)
+        this.$router.push(`/agenda/exito?c=${appointmentId}`)
       } catch (err) {
         // Mostrar error
         alert(err.message)

@@ -34,7 +34,7 @@ import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
-import iciServices from '../../../services/iciServices'
+import iciServices from '../../services/iciServices'
 
 // Configurar dayjs
 dayjs.extend(utc)
@@ -42,11 +42,10 @@ dayjs.extend(timezone)
 dayjs.extend(localizedFormat)
 
 export default {
-  async asyncData ({ params }) {
+  async asyncData ({ query }) {
     // Obtener datos de la cita
-    const appointmentId = params.id
+    const appointmentId = query.c || 1
     const appointment = (await iciServices.getAppointment(appointmentId)).data
-    console.log(appointment)
 
     return {
       appointment
