@@ -124,35 +124,35 @@ export default {
 
       try {
         // Guardar datos del paciente
-        const patientId = await this.savePatient()
+        // const patientId = await this.savePatient()
         
-        // Obtener datos de la cita
-        const idDentista = parseInt(this.appointmentData.slotData.id_dentista, 10)
-        const idEspecialidad = parseInt(this.specialityId, 10)
-        const idSillon = parseInt(this.appointmentData.slotData.id_sillon, 10)
-        const fecha = this.appointmentData.date
-        const hora = this.appointmentData.time
-        const comment = this.comment
+        // // Obtener datos de la cita
+        // const idDentista = parseInt(this.appointmentData.slotData.id_dentista, 10)
+        // const idEspecialidad = parseInt(this.specialityId, 10)
+        // const idSillon = parseInt(this.appointmentData.slotData.id_sillon, 10)
+        // const fecha = this.appointmentData.date
+        // const hora = this.appointmentData.time
+        // const comment = this.comment
 
-        // Guardar datos de la cita
-        const appointmentRes = await iciServices.saveAppointment(
-          idDentista,
-          idEspecialidad,
-          patientId,
-          idSillon,
-          fecha,
-          hora,
-          comment
-        )
+        // // Guardar datos de la cita
+        // const appointmentRes = await iciServices.saveAppointment(
+        //   idDentista,
+        //   idEspecialidad,
+        //   patientId,
+        //   idSillon,
+        //   fecha,
+        //   hora,
+        //   comment
+        // )
 
-        const appointmentId = appointmentRes.data.id
+        // const appointmentId = appointmentRes.data.id
 
         // Eliminar información del estado
         this.$store.commit('form/setFormData', null)
         this.$store.commit('schedule/setAppointmentData', null)
 
         // Redirigir al usuario
-        this.$router.push(`/agenda/exito?c=${appointmentId}`)
+        this.$router.push(`/agenda/exito?c=${135273}`)
       } catch (err) {
         // Mostrar error
         alert(err.message)

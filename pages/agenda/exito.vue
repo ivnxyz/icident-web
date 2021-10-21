@@ -11,13 +11,18 @@
       <p class="text-pink-500 border-b-2 pb-2 mb-3 w-full">
         <a href="https://www.google.com/maps/place/ICI+Cl%C3%ADnica+Dental/@19.1580506,-96.1087074,21z/data=!4m5!3m4!1s0x85c3418b052584fb:0x67277dc9da175814!8m2!3d19.1581478!4d-96.1084761" target="_blank">
           <outline-location-marker-icon class="w-8 h-8 inline" />
-          {{ appointment.nombre_sucursal }}
+          ICI Clínica dental
         </a>
       </p>
-      <!-- Nombre del doctor -->
+      <!-- Nombre del dentista -->
       <p class="border-b-2 pb-2 mb-3">
         <outline-user-icon class="w-8 h-8 inline" />
         Dentista: {{ appointment.nombre_dentista }}
+      </p>
+      <!-- Nombre del paciente -->
+      <p class="border-b-2 pb-2 mb-3">
+        <outline-emoji-happy-icon class="w-8 h-8 inline" />
+        Paciente: {{ appointment.nombre_paciente }}
       </p>
       <!-- Fecha y hora -->
       <p class="border-b-2 pb-2 mb-3">
