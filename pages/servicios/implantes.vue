@@ -5,11 +5,11 @@
         <h1 class="text-3xl font-bold text-center mb-10">Implantes dentales</h1>
 
         <p>
-            ¿Has perdido algún diente por desgaste, accidente o enfermedad de encias? Los implantes dentales son una excelente solución para reponer dientes faltantes. Los implantes se ven y se sientes como un diente natural y es un solución más permanente.
+            ¿Has perdido algún diente por desgaste, accidente o enfermedad de encias? Los implantes dentales son una excelente solución para reponer dientes faltantes. Los implantes se ven y se sienten como un diente natural y es un solución más permanente.
           </p>
 
           <p>
-            Los implantes se colocan en etapas, primero se coloca con una cirugía el poste del implante hecho titanio material que es compatible con tu cuerpo, una ves hecha la cirugía se deja que le implante sane y se oseointegre al hueso, este proceso puede tomar algunos meses y así se crea una fuerte base en el implante.
+            Los implantes se colocan en etapas, primero se coloca con una cirugía el poste del implante hecho de titanio, material que es compatible con tu cuerpo, una vez hecha la cirugía se deja que le implante sane y se oseointegre al hueso, este proceso puede tomar algunos meses y así se crea una fuerte base en el implante.
           </p>
 
           <p>
@@ -17,7 +17,7 @@
           </p>
 
           <p>
-            Para colocar un implante exitosamente debe de haber suficiente densidad osea en la quijada, en tus primeras citas avaluaremos si tiene esta densidad o de lo contrario será necesario realzarte un injerto de hueso para prepararte a la cirugía de implante.
+            Para colocar un implante exitosamente debe de haber suficiente densidad osea en la quijada, en tus primeras citas evaluaremos si tiene esta densidad o de lo contrario será necesario realizarse un injerto de hueso para prepararte a la cirugía de implante.
           </p>
 
           <p>

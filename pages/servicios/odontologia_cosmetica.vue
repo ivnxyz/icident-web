@@ -5,7 +5,7 @@
         <h1 class="text-3xl font-bold text-center mb-10">Odontología Cosmética</h1>
 
         <p>
-          ¿Has evitado sonreir porque tu sonrisa te incomoda o avergüenza? ¿Tus dientes son amarillos, desgastados o amontonados o chuecos? Decídete ya y cambia tu sonrisa por una que de una primea buena impresión, agenda ya una cita en ICI.
+          ¿Has evitado sonreir porque tu sonrisa te incomoda o avergüenza? ¿Tus dientes son amarillos, desgastados o amontonados o chuecos? Decídete ya y cambia tu sonrisa por una que de una primera buena impresión, agenda ya una cita en ICI.
         </p>
 
         <p class="font-semibold mt-8">

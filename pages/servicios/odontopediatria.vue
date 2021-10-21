@@ -2,7 +2,7 @@
   <div>
     <section class="min-h-screen flex items-center justify-center max-w-5xl mx-6 lg:mx-auto">
       <article class="border-2 border-gray-200 rounded-lg text-gray-800 mt-24 mb-20 p-10">
-        <h1 class="text-3xl font-bold text-center mb-10">Guardas</h1>
+        <h1 class="text-3xl font-bold text-center mb-10">Odontopediatría</h1>
 
         <p>
           Los dientes de leche de tu hijo son la guía para una sonrisa permanente, requieren especial cuidado, es muy importante que tu hijo tenga una primera visita al dentista a los 2 años de edad, quédate tranquilo nuestros especialistas saben cómo tratar a niños de temprana edad.
@@ -13,7 +13,7 @@
         </p>
 
         <p>
-          Desde temprana edad, tu hijo debe aprender la importancia de mantener una buena salud bucal, aquí algunos consejos que ayudarán a tu hijo a tener una sonrosa saludable:
+          Desde temprana edad, tu hijo debe aprender la importancia de mantener una buena salud bucal, aquí algunos consejos que ayudarán a tu hijo a tener una sonrisa saludable:
         </p>
 
         <ul class="list-disc list-inside my-8">

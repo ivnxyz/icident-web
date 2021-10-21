@@ -33,7 +33,7 @@
             Daños en la mandíbula: Se pueden formar quistes alrededor de las muelas del juicio dañando los nervios y perforando la mandíbula
           </li>
           <li class="mb-3">
-            Inflamación de encías. Las muelas del juicio son difíciles de limpiar dada su posición y puede causar que el tejido a su alrededor se hinche, causar caries y enfermedades de las encías
+            Inflamación de encías. Las muelas del juicio son difíciles de limpiar dada su posición y puede causar que el tejido a su alrededor se inflame, causar caries y enfermedades de las encías
           </li>
           <li class="mb-3">
             Problemas en los senos nasales: Las muelas del juicio pueden causar dolor en los senos nasales, presión y congestión
@@ -41,7 +41,7 @@
         </ul>
 
         <p class="mt-10">
-          El retiro de los terceros molares se realiza con anestesia local y toma menos de 30 minutos remover las 4 muelas, en ICI nos enorgullece contar con un equipo de especialistas que hará que esta experiencia sea para ti libre de estrés, agenda una cita ya donde te explicaremos todos los detalles y aclararemos todas tus dudas.
+          El retiro de los terceros molares se realiza con anestesia local y toma menos de 60 minutos remover las 4 muelas, en ICI nos enorgullece contar con un equipo de especialistas que hará que esta experiencia sea para ti libre de estrés, agenda una cita ya donde te explicaremos todos los detalles y aclararemos todas tus dudas.
         </p>
 
         <!-- Botón para agendar cita -->

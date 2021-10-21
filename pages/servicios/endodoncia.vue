@@ -37,7 +37,7 @@
 
         <ol class="list-decimal list-inside my-8">
           <li>Se anestecia al paciente</li>
-          <li>El diente infectado de aisla de la saliva y otros contaminantes con un aislamiento especial</li>
+          <li>El diente infectado se aisla de la saliva y otros contaminantes con un aislamiento especial</li>
           <li>La corona del diente se abre para extraer la pulpa infectada</li>
           <li>Las raíces se limpian y se da forma, en algunos casos se tratan con medicación para eliminar bacterias</li>
           <li>Se coloca una resina temporal en la corona para proteger el diente</li>

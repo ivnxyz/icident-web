@@ -17,8 +17,7 @@
       </h3>
 
       Nuestro odontólogo general continuará con algunos cuestionamientos sobre tu situación de salud, alergias e intervenciones quirúrgicas previas, de esta manera tu historia clínica estará completa. Posteriormente, hará una revisión visual en tu boca y evaluará si el necesario tomar alguna placa de rayos X para tener un diagnóstico preciso.
-      Una vez realizado el diagnóstico se te informará a detalle el resultado y lo más importante se te explicará a detalle el plan de tratamiento a seguir para que recuperes al 100% tu salud bucal
-      Costos
+      Una vez realizado el diagnóstico se te informará a detalle el resultado y lo más importante se te explicará a detalle el plan de tratamiento a seguir para que recuperes al 100% tu salud bucal.
 
       <h3 class="font-bold mt-8">
         Formas de pago

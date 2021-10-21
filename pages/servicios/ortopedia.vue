@@ -6,7 +6,7 @@
 
         <p>
           Los niños tienen problemas dentales específicos que es mejor tratar lo más temprano posible, por ejemplo, chuparse el pulgar puede traer problemas posteriores, la pérdida de dientes a una edad muy temprana puede dificultar la correcta erupción de los dientes permanentes, la aparatología ortopédica puede atender problemas cuando son mucho más fáciles de corregir.
-          Los dientes de leche sirven de guía para los dientes permanentes, por lo mismo es mejor corregir el alineamiento lo antes posible, es conveniente evaluar a tu niño lo antes posible en especial si tuvo el hábito de chuparse el dedo.
+          Los dientes de leche sirven de guía para los dientes permanentes, por lo mismo es mejor corregir el alineamiento a temprana edad, en especial si tuvo el hábito de chuparse el dedo.
         </p>
 
         <p class="font-semibold mt-8">

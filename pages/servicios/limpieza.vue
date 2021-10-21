@@ -41,7 +41,7 @@
         </p>
 
         <p>
-          Tu doctor comienza removiendo toda la plaza dentobacteriana que se ha formado en tus dientes, esto puede hacerse utilizando instrumentos manuales o instrumentos de ultrasonido.
+          Tu doctor comienza removiendo toda la placa dentobacteriana que se ha formado en tus dientes, esto puede hacerse utilizando instrumentos manuales o instrumentos de ultrasonido.
         </p>
 
         <p class="font-semibold mt-8">
