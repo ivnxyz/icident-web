@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen flex flex-col justify-center items-center">
+  <div v-if="appointment" class="h-screen w-screen flex flex-col justify-center items-center">
     <!-- Título -->
     <h1 class="block text-green-600 font-bold text-xl mb-4">
       ¡Se agendó tu cita!
@@ -42,14 +42,13 @@ dayjs.extend(timezone)
 dayjs.extend(localizedFormat)
 
 export default {
-  async asyncData ({ query }) {
+  data: () => ({
+    appointment: null
+  }),
+  async mounted() {
     // Obtener datos de la cita
-    const appointmentId = query.c
-    const appointment = (await iciServices.getAppointment(appointmentId)).data
-
-    return {
-      appointment
-    }
+    const appointmentId = this.$route.query.c
+    this.appointment = (await iciServices.getAppointment(appointmentId)).data
   },
   methods: {
     getReadableDate(strDate) {
