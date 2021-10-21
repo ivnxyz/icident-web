@@ -17,7 +17,7 @@
           </p>
 
           <p>
-            Para colocar un implante exitosamente debe de haber suficiente densidad osea en la quijada, en tus primeras citas evaluaremos si tiene esta densidad o de lo contrario será necesario realizarse un injerto de hueso para prepararte a la cirugía de implante.
+            Para colocar un implante exitosamente debe de haber suficiente densidad osea en la quijada, en tus primeras citas evaluaremos si tiene esta densidad o de lo contrario será necesario realizarte un injerto de hueso para prepararte a la cirugía de implante.
           </p>
 
           <p>
