@@ -25,10 +25,10 @@
       @loadSchedule="loadSchedule"
     />
     <!-- Comentario -->
-    <h3 class="text-gray-600 font-semibold mt-4">
+    <h3 class="text-gray-600 font-semibold mt-4 required">
       Platícanos sobre el servicio que necesitas
     </h3>
-    <textarea v-model="comment" class="mt-2 bg-gray-100 rounded border border-gray-200 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Escribe tu comentario' maxlength="250"/>
+    <textarea required v-model="comment" class="mt-2 bg-gray-100 rounded border border-gray-200 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Escribe tu comentario' maxlength="250"/>
     <p class="text-right font-medium px-2 py-1 text-xs text-gray-600 w-full">
       {{comment.length}}
     </p>
@@ -116,6 +116,12 @@ export default {
         return
       }
 
+      // Verificar que haya un comentario
+      if (!(this.comment.length > 1)) {
+        alert("Por favor ingresa tu comentario")
+        return
+      }
+
       try {
         // Guardar datos del paciente
         const patientId = await this.savePatient()
@@ -187,3 +193,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.required:after {
+  content:" *";
+  color: red;
+}
+</style>

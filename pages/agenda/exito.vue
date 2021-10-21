@@ -44,7 +44,7 @@ dayjs.extend(localizedFormat)
 export default {
   async asyncData ({ query }) {
     // Obtener datos de la cita
-    const appointmentId = query.c || 1
+    const appointmentId = query.c
     const appointment = (await iciServices.getAppointment(appointmentId)).data
 
     return {
