@@ -59,6 +59,7 @@ export default {
       variants: {
         extend: {
           backgroundColor: ['active'],
+          padding: ['hover', 'focus'],
         }
       },
     }

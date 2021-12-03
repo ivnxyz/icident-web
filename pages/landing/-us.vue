@@ -33,7 +33,7 @@
           Ganador del premio<br><b>INNOVATOR</b> por la<br><b>Red Internacional Innovator</b>
         </p>
         <!-- Imagen -->
-        <img class="w-32 h-35 object-contain rounded-lg" src="@/assets/awards/3.jpeg" alt="Premio Innovator">
+        <img class="w-32 h-35 object-contain rounded-lg" src="@/assets/awards/innovator.png" alt="Premio Innovator">
       </article>
       <!-- UBS -->
       <article class="text-center flex flex-col items-center">
@@ -46,7 +46,7 @@
           Ganador del premio<br><b>UBS (United Bonus of<br>Switzerland) Visionaris</b>
         </p>
         <!-- Imagen -->
-        <img class="w-32 h-35 object-contain rounded-lg" src="@/assets/awards/4.jpeg" alt="Premio UBS">
+        <img class="w-32 h-35 object-contain rounded-lg" src="@/assets/awards/ubs.png" alt="Premio UBS">
       </article>
       <!-- Ashoka -->
       <article class="text-center flex flex-col items-center">
@@ -59,7 +59,7 @@
           <b>Miembro de la<br>Red Internacional<br>de emprendedores<br>sociales Ashoka</b>
         </p>
         <!-- Imagen -->
-        <img class="w-28 h-28 object-contain rounded-lg" src="@/assets/awards/1.jpeg" alt="Premio Ashoka">
+        <img class="w-28 h-28 object-contain rounded-lg" src="@/assets/awards/ashoka.png" alt="Premio Ashoka">
       </article>
       <!-- Expansión -->
       <article class="text-center flex flex-col items-center">
@@ -72,7 +72,7 @@
           Finalista en el concurso<br>emprendedores Expansión
         </p>
         <!-- Imagen -->
-        <img class="w-36 h-36 object-contain rounded-lg" src="@/assets/awards/2.jpeg" alt="Premio Expansión">
+        <img class="w-36 h-36 object-contain rounded-lg" src="@/assets/awards/expansion.png" alt="Premio Expansión">
       </article>
     </div>
     <!-- Sello -->
