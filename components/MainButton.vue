@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-pink-500 active:bg-pink-600 text-white px-8 py-4 rounded-lg font-medium tracking-widest flex justify-center items-center" @click="onClick">
+  <button class="bg-blue-500 active:bg-blue-600 text-white px-8 py-4 rounded-full font-medium tracking-widest flex justify-center items-center" @click="onClick">
     <!-- Spinner -->
     <Spinner v-if="loading" size="8" color="white"/>
     <!-- Contenido del botón -->
