@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-bold">
     <hr class="line-divider">
       <h2 class="tracking-wider my-4 text-gray-500 text-xl md:text-3xl text-center">
         <slot/>

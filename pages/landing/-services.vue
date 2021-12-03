@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen py-12 font-bold text-gray-800">
+  <section class="min-h-screen py-12 text-gray-800">
     <!-- Título -->
     <SectionDivider>
       SERVICIOS ICI
