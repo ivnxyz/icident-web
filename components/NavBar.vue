@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full bg-white fixed top-0 animated z-40 shadow-sm">
+  <nav class="h-16 w-full bg-white fixed top-0 animated z-40 shadow-sm">
     <!-- Contenido de la barra de navegación -->
     <div class="mx-w-7xl px-3 py-3 mx-auto">
       <div class="flex justify-between">

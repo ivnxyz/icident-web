@@ -1,7 +1,7 @@
 <template>
-  <section class="h-screen flex flex-col items-center justify-center header-image">
+  <section class="flex flex-col items-center justify-center header-image header-height">
     <!-- Cita principal -->
-    <div class="w-full flex items-center flex-grow md:flex-row md:mt-8">
+    <div class="w-full md:pt-8 flex items-center flex-grow md:flex-row">
       <!-- Texto -->
       <div class="text-white text-center md:text-left md:px-12 w-full md:w-8/12 lg:w-9/12">
         <h1 class="text-3xl md:text-5xl font-bold mb-6 md:mb-2">
@@ -23,7 +23,7 @@
         <div class="text-white text-left">
           <!-- Dirección -->
           <p class="mb-3">
-            <outline-location-marker-icon class="w-6 h-6 inline"/> Av. Tiburón 160-interior 21,<br>Costa de Oro, 94299<br>Boca del Río, Ver.
+            <outline-location-marker-icon class="w-6 h-6 inline"/>Av. Tiburón 160-interior 21,<br>Costa de Oro, 94299<br>Boca del Río, Ver.
           </p>
           <!-- Teléfono -->
           <p class="mb-3">
@@ -63,5 +63,9 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-height {
+  height: calc(100vh - theme('height.16'));
 }
 </style>

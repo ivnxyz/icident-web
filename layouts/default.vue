@@ -3,7 +3,9 @@
     <!-- Barra de navegación -->
     <NavBar/>
     <!-- Contenido principal -->
-    <Nuxt />
+    <div class="bg-gray-50 content-container mt-16">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
@@ -34,3 +36,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.content-container {
+  min-height: calc(100vh - theme('height.16'));
+}
+</style>
