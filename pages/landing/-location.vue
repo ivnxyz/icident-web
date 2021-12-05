@@ -25,16 +25,6 @@
 </template>
 
 <script>
-import VideoPlayer from 'nuxt-video-player'
-require('nuxt-video-player/src/assets/css/main.css')
-
 export default {
-  components: {
-    VideoPlayer
-  }
 }
 </script>
-
-<style>
-
-</style>
