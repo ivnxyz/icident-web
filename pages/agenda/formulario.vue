@@ -8,7 +8,7 @@
       <p class="text-gray-600">
         Cuéntanos un poco de ti
       </p>
-      <!-- Información del paciente -->
+      <!-- Datos del paciente -->
       <div class="flex flex-col md:flex-row md:space-x-5 mt-8">
         <!-- Nombre -->
         <div class="w-full md:w-1/2">
