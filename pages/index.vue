@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative overflow-hidden">
     <Home/>
     <Us id="us" />
     <Services id="servicios"/>

@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center justify-center header-image header-height">
     <!-- Imagen de puntos -->
-    <img class="w-26 h-32 contain absolute top-16 -right-2" src="@/assets/icons/dots.svg" alt="Puntos de adorno">
+    <img class="w-26 h-32 contain absolute -top-8 -right-2" src="@/assets/icons/dots.svg" alt="Puntos de adorno">
     <!-- Cita principal -->
     <div class="w-full md:mt-12 flex items-center flex-grow md:flex-row">
       <!-- Texto -->
