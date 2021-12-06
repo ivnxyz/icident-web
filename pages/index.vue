@@ -6,6 +6,7 @@
     <Gallery id="galeria"/>
     <Care id="cuidados"/>
     <Location class="mt-16" id="nosotros"/>
+    <Clinics class="mt-16" id="Instalaciones" />
     <Footer class="mt-16" id="contacto"/>
   </div>
 </template>
@@ -18,6 +19,7 @@ import Services from './landing/-services.vue'
 import Gallery from './landing/-gallery.vue'
 import Care from './landing/-care.vue'
 import Location from './landing/-location.vue'
+import Clinics from './landing/-clinics.vue'
 
 export default {
   components: {
@@ -26,7 +28,8 @@ export default {
     Services,
     Gallery,
     Care,
-    Location
+    Location,
+    Clinics
   }
 }
 </script>
