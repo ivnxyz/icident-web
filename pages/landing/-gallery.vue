@@ -59,27 +59,27 @@ export default {
   data: () => ({
     stories: [
       {
-        image: require('@/assets/gallery/carillas.jpg'),
+        image: 'https://i.ibb.co/pwCVyhJ/carillas-img.jpg',
         description: 'ODONTOLOGÍA ESTÉTICA (CARILLAS)'
       },
       {
-        image: require('@/assets/gallery/limpieza.jpg'),
+        image: 'https://i.ibb.co/ZSPcknD/limpieza.jpg',
         description: 'LIMPIEZA Y BLANQUEAMIENTO DENTAL'
       },
       {
-        image: require('@/assets/gallery/ortodoncia.jpg'),
+        image: 'https://i.ibb.co/dpKQFgD/ortodoncia.jpg',
         description: 'TRATAMIENTO DE ORTODONCIA'
       },
       {
-        image: require('@/assets/gallery/rinomodelacion.jpg'),
+        image: 'https://i.ibb.co/9vMzbfG/rinomodelacion.jpg',
         description: 'RINOMODELACIÓN CON ÁCIDO HIÁLURONICO'
       },
       {
-        image: require('@/assets/gallery/perfilacion.jpg'),
+        image: 'https://i.ibb.co/dt2ZZ28/perfilacion.jpg',
         description: 'AUMENTO Y PERFILACIÓN DE LABIOS CON ÁCIDO HIÁLURONICO'
       },
       {
-        image: require('@/assets/gallery/estetica.jpg'),
+        image: 'https://i.ibb.co/8s2wtc1/estetica.jpg',
         description: 'ODONTOLOGÍA ESTÉTICA (CARILLAS)'
       }
     ],
