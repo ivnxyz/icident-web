@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'BwModelica';
+  font-weight: 400;
+  src: url('@/assets/fonts/BwModelica-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BwModelica';
+  font-weight: 700;
+  src: url('@/assets/fonts/BwModelica-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BwModelica';
+  font-weight: 700;
+  font-style: italic;
+  src: url('@/assets/fonts/BwModelica-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BwModelica';
+  font-weight: 800;
+  src: url('@/assets/fonts/BwModelica-ExtraBold.otf') format('opentype');
+}

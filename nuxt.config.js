@@ -54,6 +54,7 @@ export default {
   },
 
   tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
     config: {
       /* Extend the Tailwind config here */
       variants: {
@@ -62,7 +63,19 @@ export default {
           padding: ['hover', 'focus'],
         }
       },
-    }
+      theme: {
+        extend: {
+          fontFamily: {
+            modelica: ["BwModelica"],
+            sans: ["BwModelica"],
+            serif: ["BwModelica"],
+            mono: ["BwModelica"],
+            display: ["BwModelica"],
+            body: ["BwModelica"]
+          },
+        }
+      }
+    },
   },
 
   env: {

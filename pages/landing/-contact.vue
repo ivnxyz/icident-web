@@ -7,7 +7,7 @@
       <!-- Imagen -->
       <img class="absolute left-6 bottom-6 w-4 h-4 md:w-10 md:h-10" src="@/assets/icons/adorno-footer.svg">
       <!-- Información -->
-      <h2 class="text-3xl md:text-5xl font-bold tracking-wide">
+      <h2 class="text-3xl md:text-5xl font-bold font-modelica tracking-wide">
         ¡CONTÁCTANOS!
       </h2>
       <p class="text-xl md:text-4xl">
