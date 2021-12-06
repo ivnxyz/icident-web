@@ -31,7 +31,7 @@
       <div class="w-full md:w-1/2 px-4 md:px-0 flex justify-center md:justify-end">
         <!-- Horario -->
         <p class="text-md md:text-2xl">
-          <img src="@/assets/icons/clock.svg" class="w-6 h-6 mr-2 inline" alt="Icono de WhatsApp">Horario:<br>
+          <img src="@/assets/icons/clock.svg" class="w-6 h-6 mr-2 inline" alt="Icono de reloj">Horario:<br>
           Lun a Sáb 09:30 -20:00<br>
           Domingo  Cerrado
         </p>

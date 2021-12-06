@@ -1,29 +1,30 @@
 <template>
-  <footer class="bg-black text-white flex flex-col md:flex-row p-12">
+  <footer class="footer text-white flex flex-col md:flex-row p-12">
     <!-- Información de contacto -->
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:w-5/12">
       <!-- Número de teléfono -->
       <div>
-        <p class="font-bold mb-1">Número de teléfono</p>
+        <p class="footer-text font-bold mb-1">Número de teléfono</p>
         <a href="tel:522299273743">
-          <outline-phone-icon class="w-6 h-6 inline"/> +52 229 927 3743
+          <outline-phone-icon class="w-6 h-6 inline"/> 229 927 3743 / 229 927 3747
+          <img src="@/assets/icons/whatsapp.svg" class="w-6 h-6 ml-4 inline" alt="Icono de WhatsApp"><p class="ml-2 inline">Whatsapp. 229 292 2767</p>
         </a>
       </div>
       <!-- Dirección -->
       <div class="mt-10">
-        <p class="font-bold mb-1">Dirección</p>
+        <p class="footer-text font-bold mb-1">Dirección</p>
         <p class="mb-4">
-          <outline-location-marker-icon class="w-6 h-6 inline"/> C. Tiburón 160-Interior 21, Costo de Oro, 94299 Boca del Río.
+          <outline-location-marker-icon class="w-6 h-6 inline"/> Av. Tiburón 160-interior 21, Costa de Oro, 94299 Boca del Río.
         </p>
-        <a class="text-pink-500" href="https://www.google.com/maps/place/ICI+Cl%C3%ADnica+Dental/@19.1580506,-96.1087074,21z/data=!4m5!3m4!1s0x85c3418b052584fb:0x67277dc9da175814!8m2!3d19.1581478!4d-96.1084761" target="_blank">
+        <a class="footer-text font-bold" href="https://www.google.com/maps/place/ICI+Cl%C3%ADnica+Dental/@19.1580506,-96.1087074,21z/data=!4m5!3m4!1s0x85c3418b052584fb:0x67277dc9da175814!8m2!3d19.1581478!4d-96.1084761" target="_blank">
           Ver en mapas
         </a>
       </div>
     </div>
     <!-- Redes sociales -->
-    <div class="mt-16 w-full md:w-1/2 md:mt-0 md:px-12">
+    <div class="mt-16 w-full md:w-4/12 md:mt-0 md:px-12">
       <!-- Título -->
-      <p class="font-bold mb-1">
+      <p class="footer-text font-bold mb-1">
         Redes sociales
       </p>
       <!-- Enlaces -->
@@ -44,15 +45,27 @@
             Instagram
           </a>
         </li>
-        <li>
-          <a href="https://wa.me/+522292922767">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp text-white inline" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-            </svg>
-            WhatsApp
-          </a>
-        </li>
       </ul>
+    </div>
+    <!-- Derechos -->
+    <div class="mt-16 w-full md:w-3/12 md:mt-0">
+      <p>
+        Todos los derechos reservados<br>
+        ICI Clínica Dental   2021
+      </p>
+      <p class="footer-text font-bold mt-10">
+        Aviso de Privacidad
+      </p>
     </div>
   </footer>
 </template>
+
+<style scoped>
+.footer {
+  background-color: #565D97;
+}
+
+.footer-text {
+  color: #232844;
+}
+</style>
