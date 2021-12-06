@@ -1,12 +1,12 @@
 <template>
   <div class="relative overflow-hidden">
     <Home/>
-    <Us id="us" />
+    <Us />
     <Services id="servicios"/>
     <Gallery id="galeria"/>
-    <Care id="cuidados"/>
+    <Care id="visita"/>
     <Location class="mt-16" id="nosotros"/>
-    <Clinics class="mt-16" id="Instalaciones" />
+    <Clinics class="mt-16" id="instalaciones" />
     <Contact class="mt-32" id="contacto" />
     <Footer/>
   </div>
