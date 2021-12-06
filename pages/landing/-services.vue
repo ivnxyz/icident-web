@@ -1,5 +1,7 @@
 <template>
   <section class="min-h-screen py-12 text-gray-800">
+    <!-- Modal con la información -->
+    <ServiceModal :showModal="showModal" :service="selectedService" @close-modal="closeModal" />
     <!-- Título -->
     <SectionDivider>
       SERVICIOS ICI
@@ -11,9 +13,9 @@
       <img class="w-1/6 md:w-1/12 contain absolute -mt-6 bottom-0 right-3" src="@/assets/icons/blue-dots.svg" alt="Puntos azules de decoración">
       <!-- Lista de servicios -->
       <div class="grid mt-10 gap-5 grid-cols-2 md:grid-cols-4 px-4 md:px-12">
-        <article class="text-center rounded-lg flex flex-col cursor-pointer transition-all duration-400 transform hover:scale-105 cursor-pointer" v-for="service in services" :key="service.title" @click="goToServiceDetails(service.url)">
+        <article class="text-center rounded-lg flex flex-col cursor-pointer transition-all duration-400 transform hover:scale-105 cursor-pointer" v-for="service in services" :key="service.title" @click="toggleModal(service)">
           <!-- Imagen -->
-          <img class="w-32 h-42 rounded-xl w-full object-contain" :src="service.imageUrl" alt="Persona sonriendo">
+          <img class="w-32 h-42 w-full object-contain" :src="service.imageUrl" alt="Persona sonriendo">
           <!-- Título -->
           <div class="flex flex-grow items-center justify-center my-2">
             <h3 class="mt-2 text-gray-80">
@@ -80,11 +82,20 @@ export default {
         imageUrl: require('@/assets/services/implantes-dentales.png'),
         url: 'implantes'
       }
-    ]
+    ],
+    showModal: false,
+    selectedService: null
   }),
   methods: {
     goToServiceDetails(serviceUrl) {
       this.$router.push('/servicios/' + serviceUrl)
+    },
+    toggleModal(service) {
+      this.selectedService = service
+      this.showModal = !this.showModal
+    },
+    closeModal() {
+      this.showModal = false
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white pt-12">
+  <div class="bg-white p-6">
     <!-- Formulario -->
-    <form @submit.prevent="submitForm" class="form max-w-5xl mx-auto p-6 my-10 relative">
+    <form @submit.prevent="submitForm" class="form max-w-5xl mx-auto my-10 relative">
       <h3 class="text-2xl text-gray-900 font-semibold">
         Ya casi tienes tu cita
       </h3>

@@ -1,5 +1,8 @@
 <template>
   <div class="relative overflow-hidden">
+    <!-- Botón de WhatsApp -->
+    <WhatsAppButton class="z-10 fixed bottom-4 left-4 md:bottom-6 md:left-6" />
+    <!--  -->
     <Home/>
     <Us />
     <Services id="servicios"/>

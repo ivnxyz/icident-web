@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white pt-12 max-w-5xl mx-auto p-6 relative">
+  <div class="bg-white max-w-5xl mx-auto p-6 relative">
     <!-- Selector de especialidad -->
     <h3 class="text-gray-600 font-semibold mt-10">
       Seleccione la especialidad

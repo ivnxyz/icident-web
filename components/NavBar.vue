@@ -35,7 +35,7 @@
         <!-- Navegación secundaria -->
         <div class="hidden lg:block">
           <button class="cta-button active:bg-indigo-600 text-white px-5 py-2 rounded-lg font-medium tracking-widest" @click="onCTAClicked">
-            Agenda tu cita
+            AGENDA TU CITA
           </button>
         </div>
         <!-- Menú para teléfonos -->
