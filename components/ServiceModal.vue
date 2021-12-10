@@ -34,7 +34,7 @@ export default {
     },
     service: {
       type: Object,
-      required: true
+      required: false
     }
   },
   methods: {
