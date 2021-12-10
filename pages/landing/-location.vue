@@ -5,7 +5,7 @@
       <div class="w-full h-screen">
         <!-- Título -->
         <div class="h-1/3 relative">
-          <img class="h-full object-contain absolute -left-24 -top-8" src="@/assets/conocenos.svg" alt="Conócenos: Av. Tiburón 160-interior 21, Costa de Oro, 94299 Boca del Río, Ver.">
+          <img class="h-full object-contain absolute -left-24 -top-8" src="@/assets/conocenos.png" alt="Conócenos: Av. Tiburón 160-interior 21, Costa de Oro, 94299 Boca del Río, Ver.">
         </div>
         <!-- Imagen de google maps -->
         <img class="h-2/3 bg w-full object-cover rounded-md" src="@/assets/ubicacion.png" alt="Imagen con la ubicación en Google Maps">
