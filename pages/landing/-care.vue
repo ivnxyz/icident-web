@@ -1,5 +1,7 @@
 <template>
   <section class="">
+    <!-- Modal con la información -->
+    <DiagnosisModal :showModal="showModal" @close-modal="closeModal" />
     <!-- Título -->
     <SectionDivider>
       ¿QUÉ DEBES ESPERAR EN TU PRIMERA VISITA?
@@ -28,7 +30,7 @@
           <p>
             Nuestro odontólogo general continuará con algunos cuestionamientos sobre tu situación de salud, alergias e intervenciones quirúrgicas previas, de esta manera tu historia clínica estará completa. Posteriormente, hará una revisión visual en tu boca y evaluará...
           </p>
-          <button class="text-center w-full font-bold mt-3 mb-2 text-gray-400 underline" href="">
+          <button @click="toggleModal" class="text-center w-full font-bold mt-3 mb-2 text-gray-400 underline">
             Ver más
           </button>
         </div>
@@ -87,6 +89,22 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    showModal: false,
+  }),
+  methods: {
+    toggleModal() {
+      this.showModal = !this.showModal
+    },
+    closeModal() {
+      this.showModal = false
+    }
+  }
+}
+</script>
 
 <style scoped>
 .step {
