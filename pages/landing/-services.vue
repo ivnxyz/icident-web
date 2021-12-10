@@ -74,7 +74,7 @@ export default {
       },
       {
         title: 'Odontología cosmética',
-        imageUrl: require('@/assets/services/odontologia-general.png'),
+        imageUrl: require('@/assets/services/odontologia-cosmetica.png'),
         url: 'odontologia_cosmetica'
       },
       {
