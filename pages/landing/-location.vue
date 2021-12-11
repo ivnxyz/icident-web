@@ -1,7 +1,7 @@
 <template>
   <section class="w-full flex flex-col md:flex-row">
     <!-- Lado izquierdo -->
-    <div class="w-full md:w-2/3 p-4 md:p-8 flex items-end">
+    <div class="w-full md:w-2/3 p-4 md:p-4 flex items-end">
       <div class="w-full h-screen">
         <!-- Título -->
         <div class="h-1/3 relative">
@@ -14,7 +14,7 @@
         class="h-full bg w-full object-cover rounded-md"
         language="es"
         :center="{lat: location.lat, lng: location.lng}"
-        :zoom="18"
+        :zoom="19"
       >
         <GMapMarker :position="{lat: location.lat, lng: location.lng}">
           <GMapInfoWindow :options="{maxWidth: 200}">
