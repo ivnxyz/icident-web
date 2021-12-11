@@ -78,8 +78,8 @@
       </div>
     </div>
     <!-- Sello -->
-    <div class="hidden md:flex md:w-3/12 items-center justify-center">
-      <img class="mx-8 object-contain w-9/12" src="@/assets/images/stamp.png" alt="Sello de +10 años de experiencia">
+    <div class="pl-4 md:pl-0 md:flex md:w-3/12 items-center justify-center">
+      <img class="mx-14 md:mx-8 object-contain w-9/12" src="@/assets/images/stamp.png" alt="Sello de +10 años de experiencia">
     </div>
   </section>
 </template>
