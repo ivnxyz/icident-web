@@ -46,7 +46,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    ['@netsells/nuxt-hotjar', { id: '2632405', sv: '6' }]
+    ['@netsells/nuxt-hotjar', { id: '2632405', sv: '6' }],
+    ['nuxt-gmaps', { key: 'AIzaSyDYTZ9Q5e2GfKElMngryeEpUJqbjl9463g' }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
