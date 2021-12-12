@@ -76,7 +76,7 @@ export default {
   }),
   mixins: [readableDate],
   mounted() {
-    this.sortedDates = Object.keys(this.schedule)
+    this.sortedDates = this.sortDates(Object.keys(this.schedule))
   },
   methods: {
     toggleSlot(date, slot) {

@@ -11,6 +11,9 @@ export default {
     },
     getReadableDate(date) {
       return this.capitalize(dayjs(date, 'YYYY-MM-DD').format('dddd D'))
+    },
+    sortDates(dates) {
+      return dates.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
     }
   }
 }
