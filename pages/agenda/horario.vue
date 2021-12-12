@@ -81,22 +81,15 @@ export default {
   },
   methods: {
     async onSpecialitySelected(speciality) {
-      // Mostrar spinner
-      this.loadingSchedule = true
-
       try {
         // Guardar id de la especialidad
         this.specialityId = speciality.id
 
         // Obtener agenda
-        const agenda = await iciServices.getSchedule(this.specialityId)
-        this.agenda = agenda.data
+        this.loadSchedule(this.currentWeek)
       } catch (err) {
         alert(err.message)
       }
-
-      // Ocultar spinner
-      this.loadingSchedule = false
     },
     async savePatient() {
       // Guardar datos del paciente
