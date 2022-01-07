@@ -81,6 +81,11 @@ export default {
         title: 'Implantes dentales',
         imageUrl: require('@/assets/services/implantes-dentales.png'),
         url: 'implantes'
+      },
+      {
+        title: 'Alineadores invisibles',
+        imageUrl: require('@/assets/services/alineadores-invisibles.png'),
+        url: 'alineadores_invisibles'
       }
     ],
     showModal: false,
