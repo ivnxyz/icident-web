@@ -2,7 +2,7 @@
   <section class="flex items-center justify-center max-w-5xl mx-2 lg:mx-auto">
     <article class="text-gray-800">
       <p>
-        El color blanco de tus dientes es lo primero que se parecía cuando sonríes, si no  quieres utilizar los tradicionales brackets metálicos o de zafiro y deseas corregir tu sonrisa los alineadores dentales pueden ser la mejor opción para ti.
+        El color blanco de tus dientes es lo primero que aparece cuando sonríes, si no  quieres utilizar los tradicionales brackets metálicos o de zafiro y deseas corregir tu sonrisa los alineadores dentales pueden ser la mejor opción para ti.
       </p>
       <p class="mt-8">
         Los alineadores dentales tiene muchas ventajas sobre los brackets tradicionles:  son más cómodos, más estéticos, el tratamiento se acorta, son más higiénicos, en resumen tienen una tecnología más avanzada.
