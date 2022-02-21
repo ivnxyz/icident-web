@@ -15,13 +15,6 @@
       </p>
 
       <p class="font-semibold mt-8">
-        Invisalign: Ortodoncia invisible para adultos
-      </p>
-      <p>
-        Nunca es tarde para tener una mordida saludable y alineada, sin embargo, tal vez dudas en ponerte una blackets convencionales, por lo mismo te ofrecemos el sistema Invisalign, al usas estos alineadores invisibles y removibles tus dientes se alinearán sin que nadie lo sepa y podrás comer todo tipo de alimentos.
-      </p>
-      
-      <p class="font-semibold mt-8">
         Agenda una cita de valoración GRATUITA
       </p>
       <p>
