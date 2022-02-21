@@ -2,7 +2,7 @@
   <section class="flex items-center justify-center max-w-5xl mx-2 lg:mx-auto">
     <article class="text-gray-800">
       <p>
-        Los dientes de leche de tu hijo son la guía para una sonrisa permanente, requieren especial cuidado, es muy importante que tu hijo tenga una primera visita al dentista a los 2 años de edad, quédate tranquilo nuestros especialistas saben cómo tratar a niños de temprana edad.
+        Los dientes de leche de tu hijo son la guía para una sonrisa permanente, requieren especial cuidado, es muy importante que tu hijo tenga una primera visita al dentista al año de edad, quédate tranquilo nuestros especialistas saben cómo tratar a niños de temprana edad.
       </p>
       
       <p class="font-semibold mt-8">
