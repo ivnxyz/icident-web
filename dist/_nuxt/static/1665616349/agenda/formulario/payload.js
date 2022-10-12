@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/agenda/formulario", {data:[{}],fetch:{},mutations:[]});

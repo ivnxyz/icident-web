@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servicios/implantes", {data:[{}],fetch:{},mutations:[]});

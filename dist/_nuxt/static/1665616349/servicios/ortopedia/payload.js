@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servicios/ortopedia", {data:[{}],fetch:{},mutations:[]});

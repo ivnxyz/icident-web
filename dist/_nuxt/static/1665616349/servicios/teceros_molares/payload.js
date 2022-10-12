@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/servicios/teceros_molares", {data:[{}],fetch:{},mutations:[]});
